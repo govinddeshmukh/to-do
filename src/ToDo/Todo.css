@@ -1,0 +1,209 @@
+.section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainContent{
+    width: max-content;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputFiled{
+    width: max-content;
+    height: 2rem;
+    border-radius: 5px;
+    display: flex;
+}
+
+.left{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background: rgba(0, 0, 0, 0.637);
+    border: none;
+    outline: none;
+    width: 3rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+width: 34rem;
+border: none;
+outline: none;
+background: rgba(0, 0, 0, 0.356);
+padding: 5px;
+font-size: 1.2rem;
+font-weight: 400;
+color: black;
+
+}
+
+.right{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: rgba(0, 0, 0, 0.637);
+    font-size: 2rem;
+    color: rgba(245, 222, 179, 0.651);
+    transition: .3s ease;
+    border: none;
+    outline: none;
+    width: 3rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.right:hover{
+    color: wheat;
+}
+
+.inputDataFiled{
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputData{
+    width: 40rem;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.emptyListDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1{
+    color: rgba(0, 0, 0, 0.514);
+    margin-top: 1rem;
+}
+.tasklist{
+    overflow: auto;
+    margin-top: 2rem;
+}
+
+
+.icon{
+    font-size: 6rem;
+    color: rgba(0, 0, 0, 0.514);
+}
+.complete{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: wheat;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    width: 3rem;
+    height: 2rem;
+}
+s{
+    width: 34rem;
+    outline: none;
+    border: none;
+    background: rgba(0, 0, 0, 0.815);
+    padding: 5px;
+    font-size: 1.2rem;
+    overflow: auto;
+    color: red;
+    font-weight: 700;
+}
+
+.task{
+    width: 34rem;
+    outline: none;
+    border: none;
+    background: rgba(0, 0, 0, 0.815);
+    padding: 5px;
+    font-size: 1.2rem;
+    overflow: auto;
+    color: black;
+    font-weight: 400;
+
+}
+.delete{
+    border: none;
+    outline: none;
+    width: 3rem;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+.add{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: wheat;
+    font-size: 1.5rem;
+}
+
+.btn{
+    color: rgba(245, 222, 179, 0.651);
+    transition: .3s ease;
+}
+.btn:hover{
+    color: wheat;
+}
+.clearAll{
+    color: rgba(255, 0, 0, 0.596);
+    transition: .3s ease;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 3px;
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    background: rgba(0, 0, 0, 0.637);
+    font-size: 1.4rem;
+}
+
+
+.clearAll:hover{
+    color: red;
+}
+
+@media screen and (max-width: 450px) {
+    .mainContent{
+        width: 20rem;
+    }
+    .inputFiled{
+        width: 18rem;
+    }
+    input{
+        width: 15rem;
+        color: black;
+    }
+    .left{
+        font-size: 1rem;
+    }
+    .right{
+        font-size: 1rem;
+    }
+    .inputDataFiled{
+        width: 18rem;
+    }
+    .inputData{
+        width: 18rem;
+    }
+    .icon{
+        font-size: 4rem;
+    }
+}
