@@ -48,6 +48,9 @@ export default function Todo(color) {
   return (
     <div className="section">
       <div className="mainContent">
+        <div style={{marginBottom:"2rem"}}>
+          <h1 style={{color:"black",fontWeight:"900"}}>My Task</h1>
+        </div>
         <div className="inputFiled">
           <button className="left btn">
             <BsListNested />

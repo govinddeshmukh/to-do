@@ -183,7 +183,12 @@ s{
     color: rgba(255, 0, 0, 0.596);
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 480px) {
+    .section{
+        margin-top: 1rem;
+        align-items: flex-start;
+    }
+    
     .mainContent{
         width: 20rem;
     }
