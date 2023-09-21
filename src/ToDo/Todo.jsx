@@ -46,22 +46,12 @@ export default function Todo(color) {
     localStorage.setItem("list", JSON.stringify(todolist));
   }, [todolist]);
   return (
-    <div
-      className="section"
-     
-    >
-      <div
-        className="mainContent"
-     
-      >
-        <div
-        className="inputFiled"
-        
-        >
-          <button
-            className="left btn"
-           
-          ><BsListNested /></button>
+    <div className="section">
+      <div className="mainContent">
+        <div className="inputFiled">
+          <button className="left btn">
+            <BsListNested />
+          </button>
           <input
             value={text}
             onChange={(e) => settext(e.target.value)}
@@ -71,28 +61,16 @@ export default function Todo(color) {
             disabled={!text}
             onClick={addtodolist}
             className="right add btn"
-          
           >
             <MdAdd />
           </button>
         </div>
-        <div
-        className="inputDataFiled"
-        
-        >
-          <div
-          className="inputData"
-           
-          >
+        <div className="inputDataFiled">
+          <div className="inputData">
             {todolist.length <= 0 && text.length === 0 ? (
-              <div className="emptyListDiv"
-               
-              >
+              <div className="emptyListDiv">
                 <BsCheckSquare className="icon" />
-                <h1
-                >
-                  No task found
-                </h1>
+                <h1>No task found</h1>
               </div>
             ) : (
               <div className="tasklist">
@@ -103,20 +81,14 @@ export default function Todo(color) {
                         <button
                           onClick={() => complete(list.id)}
                           className="complete left btn"
-                        
                         >
                           <GiCheckMark />
                         </button>
                         {list.completed ? (
-                          <s 
-                     
-                          >
-                           
-                              {list.taskname}
-                          </s>
+                          <s>{list.taskname}</s>
                         ) : (
                           <div
-                          className="task"
+                            className="task"
                             style={{
                               background: list.completed
                                 ? "red"
@@ -130,7 +102,6 @@ export default function Todo(color) {
                         <button
                           onClick={() => deleteTask(list.id)}
                           className="delete right btn"
-                         
                         >
                           X
                         </button>
@@ -148,7 +119,6 @@ export default function Todo(color) {
                   <h3>Clear All</h3>
                   <button
                     className="clearAll"
-                    
                     onClick={() => {
                       settodolist([]);
                       settext("");

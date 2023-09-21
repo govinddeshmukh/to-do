@@ -4,7 +4,7 @@ import { Colors } from "./Data/ColorData";
 import { useState } from "react";
 
 function App() {
-  const [color, setcolor] = useState("white");
+  const [color, setcolor] = useState("#AAAAAA");
   return (
     <div className="App" style={{ background: color }}>
       <div className="Color">
@@ -20,6 +20,7 @@ function App() {
                   onClick={() => setcolor(colors.color)}
                   style={{
                     background: colors.color,
+                    cursor:"pointer"
                   }}
                 ></button>
               </div>

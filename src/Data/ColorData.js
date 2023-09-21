@@ -3,18 +3,9 @@ export const Colors = [
         id:1,
         color:"burlywood"
     },
-    {
-        id:2,
-        color:"#0074D9"
-    },
-    {
-        id:3,
-        color:"#7FDBFF"
-    },
-    {
-        id:4,
-        color:"#39CCCC"
-    },
+  
+   
+  
     {
         id:5,
         color:"#B10DC9"
